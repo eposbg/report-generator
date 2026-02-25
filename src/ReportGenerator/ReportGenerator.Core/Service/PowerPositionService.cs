@@ -1,11 +1,12 @@
 using Microsoft.Extensions.Logging;
 using ReportGenerator.Core.Helpers;
+using ReportGenerator.Core.Interfaces;
 using ReportGenerator.Interfaces;
 using Services;
 
 namespace ReportGenerator
 {
-    public class PowerPositionService(ILogger<PowerPositionService> _logger, IPowerService _powerService, TimeZoneHelper _timeZoneHelper) : IPowerPositionService
+    public class PowerPositionService(ILogger<PowerPositionService> _logger, IPowerService _powerService, TimeZoneHelper _timeZoneHelper, ITradeAggregator _tradeAggregator) : IPowerPositionService
     {
         public async Task GenerateIntradayReport(string timeZoneId, string outputFolder, int intervalInMins,  CancellationToken ct)
         {
@@ -31,7 +32,7 @@ namespace ReportGenerator
                 return;
             }
 
-            var aggregated = TradeAggregator.Aggregate(trades, targetDate, londonTz);
+            var aggregated = _tradeAggregator.Aggregate(trades, targetDate, londonTz);
 
             try
             {

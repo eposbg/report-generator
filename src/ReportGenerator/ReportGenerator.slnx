@@ -6,7 +6,4 @@
     <Project Path="ReportGenerator.Core/ReportGenerator.Core.csproj" />
     <Project Path="ReportGenerator.WindowsService/ReportGenerator.WindowsService.csproj" />
   </Folder>
-  <Folder Name="/Tests/">
-    <Project Path="Tests/ReportGenerator.Core.Tests/TestProject1/ReportGenerator.Core.Tests.csproj" Id="a4878143-cbed-4fa3-80d5-931629a6c9b5" />
-  </Folder>
 </Solution>
