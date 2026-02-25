@@ -1,9 +1,12 @@
 <Solution>
   <Folder Name="/Docs/">
-    <File Path="../../../../Users/emsto/Downloads/PITL DotNet Coding Challenge2025 (003).pdf" />
+    <File Path="../../documents/PITL DotNet Coding Challenge2025 (003).pdf" />
   </Folder>
   <Folder Name="/Src/">
     <Project Path="ReportGenerator.Core/ReportGenerator.Core.csproj" />
     <Project Path="ReportGenerator.WindowsService/ReportGenerator.WindowsService.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/ReportGenerator.Core.Tests/ReportGenerator.Core.Tests.csproj" Id="04ac97c3-f0d3-45f0-958a-e4469b5d05ed" />
   </Folder>
 </Solution>
