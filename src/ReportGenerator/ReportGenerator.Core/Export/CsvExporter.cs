@@ -19,7 +19,6 @@ namespace ReportGenerator
 
             foreach (var kv in aggregated.OrderBy(k => k.Key))
             {
-                // local time format HH:mm (24 hour)
                 sb.AppendLine($"{kv.Key:HH:mm},{kv.Value.ToString(CultureInfo.InvariantCulture)}");
             }
 
