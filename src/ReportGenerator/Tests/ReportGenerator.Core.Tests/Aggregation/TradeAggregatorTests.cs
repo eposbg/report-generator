@@ -1,7 +1,6 @@
-﻿
-using Services;
+﻿using Services;
 
-namespace ReportGenerator.Core.Tests
+namespace ReportGenerator.Core.Tests.Aggregation
 {
     public class TradeAggregatorTests
     {

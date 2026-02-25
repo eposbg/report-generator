@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace ReportGenerator.Core.Tests
+namespace ReportGenerator.Core.Tests.NewFolder
 {
     public class CsvExporterTests
     {
